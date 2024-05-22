@@ -17,13 +17,13 @@ export default function Nav() {
 
   const handleLogout = () => {
     dispatch(logout());
-    localStorage.setItem("isLoggedIn", false); // Oturumu kapatıldığında isLoggedIn değerini false olarak ayarla
+    localStorage.setItem("isLoggedIn", false); 
     navigate("/");
     window.location.reload();
   };
   const openBucket = () => {
     if (!isLoggedIn) {
-      toast("Xahiş edirik hesabınıza daxil olun!", {
+      toast("Please login to your account!", {
         icon: "🌷",
       });
       navigate("/login");
@@ -35,7 +35,7 @@ export default function Nav() {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const userId = useSelector((state) => state.auth.userId); // Redux store'dan kullanıcı kimliğini al
+  const userId = useSelector((state) => state.auth.userId); // Redux store'dan userId-ni al
   const totalPrice = useSelector(({ cart: { totalPrice } }) => totalPrice);
 
   // Bucket.js
@@ -49,16 +49,12 @@ export default function Nav() {
         } else {
           dispatch(setTotalPrice());
           dispatch(setCartItems([]));
-          // Kullanıcı oturum açmamışsa veya kullanıcı kimliği yoksa, uygun bir işlem yapabilirsiniz
           console.error(
-            "Kullanıcı oturum açmamış veya kullanıcı kimliği bulunamadı."
+            "Istifadeci giris etmiyib"
           );
-          // Örneğin, kullanıcıyı oturum açma sayfasına yönlendirebilir veya uygun bir hata mesajı gösterebilirsiniz
         }
       } catch (error) {
         console.error("Error fetching user cart:", error);
-        // Kullanıcı oturum açmamış hatası olduğunda uygun bir işlem yapılabilir
-        // Örneğin, kullanıcıyı oturum açma sayfasına yönlendirebilir veya uygun bir hata mesajı gösterebilirsiniz
       }
     };
 
@@ -163,27 +159,27 @@ export default function Nav() {
                 </button>
               </div>
               <div className="menu-item">
-                <NavLink to="search">
+                <NavLink to="search" onClick={toggleMenu}>
                   <p>Search</p>
                 </NavLink>
-                <NavLink to="/">
+                <NavLink to="/" onClick={toggleMenu}>
                   <p>Home</p>
                 </NavLink>
-                <NavLink to="about">
+                <NavLink to="about" onClick={toggleMenu}>
                   <p>About us</p>
                 </NavLink>
-                <NavLink to="catalog">
+                <NavLink to="catalog" onClick={toggleMenu}>
                   <p>Catalog</p>
                 </NavLink>
-                <NavLink to="ourcollections">
+                <NavLink to="ourcollections" onClick={toggleMenu}>
                   <p>Collections</p>
                 </NavLink>
-                <NavLink to="contacts">
+                <NavLink to="contacts" onClick={toggleMenu}>
                   <p>Contacts</p>
-                </NavLink>
+                </NavLink >
                 {userId === "HeiUhqM3uEaPCkVcTsR8bckm1Nl1" ? (
                   <>
-                    <NavLink to="flowers">
+                    <NavLink to="flowers" onClick={toggleMenu}>
                       <p>Add new flowers</p>
                     </NavLink>
                   </>

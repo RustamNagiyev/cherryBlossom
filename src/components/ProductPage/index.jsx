@@ -39,14 +39,14 @@ const ProductPage = () => {
       if (!isLoggedIn) {
         
         navigate("/login");
-        toast("Xahiş edirik hesabınıza daxil olun!", {
+        toast("Please login to your account!", {
           icon: "🌷",
         });
         navigate("/login");
         return;
       }
       else{
-        toast("Məhsul səbətə əlavə edildi.", {
+        toast("The product has been added to the cart.", {
           icon: "🌷",
         });
       }

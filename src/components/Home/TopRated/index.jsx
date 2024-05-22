@@ -36,12 +36,12 @@ export default function TopRated({ cardCount, header }) {
     try {
       if (!isLoggedIn) {
         navigate("/login");
-        toast("Xahiş edirik hesabınıza daxil olun!", {
+        toast("Please login to your account!", {
           icon: "🌷",
         });
         return;
       } else {
-        toast("Məhsul səbətə əlavə edildi.", {
+        toast("The product has been added to the cart.", {
           icon: "🌷",
         });
       }
@@ -60,7 +60,7 @@ export default function TopRated({ cardCount, header }) {
 
       fetchCartItems();
     } catch (error) {
-      console.error("Ürün sepete eklenirken bir hata oluştu:", error);
+      console.error(error);
     }
   };
 

@@ -85,3 +85,35 @@
         }
     }
 }
+@media (min-width: 501px) and (max-width: 900px) {
+    .flowers{
+        .header-com{
+            font-size: 40px;
+        }
+        .center{
+            .send-area{
+                width: 80%;
+            }
+        }
+    }
+}
+@media (max-width: 500px) {
+    .flowers{
+        .header-com{
+            font-size: 30px;
+        }
+        .center{
+            .send-area{
+                width: 90%;
+                .send::placeholder{
+font-size: 12px;
+                }
+                .uploaded-images{
+                    .image-list{
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -6,6 +6,9 @@ import "../login-reg.css";
 import { useNavigate } from "react-router-dom";
 import { createUserCart } from "../../../../UserService";
 
+import toast, { Toaster } from "react-hot-toast";
+
+
 const Register = () => {
   const [authData, setAuthData] = useState({ email: "", password: "" });
   const navigate = useNavigate();     
@@ -27,6 +30,9 @@ const Register = () => {
       if (user) {
         await createUserCart(); // after register, create bucket in data
         navigate("/");
+        toast("You are registered.", {
+          icon: "🌷",
+        });
       }
     } catch (error) {
       console.log(error);
@@ -35,6 +41,20 @@ const Register = () => {
 
   return (
     <div className="auth">
+       <Toaster
+        position="top-right"
+        reverseOrder={false}
+        toastOptions={{
+          duration: 5000,
+          style: {
+            background: "#FFD1D7",
+            color: "#665F5F",
+            width: "100%",
+            height: "4rem",
+            margin: "0 1rem",
+          },
+        }}
+      />
       <div className="main">
         <div className="auth-container">
           <h2>Register</h2>

@@ -28,7 +28,6 @@ export default function Login() {
   
       if (user) {
         dispatch(login(user.uid));
-        // Oturum açıldığında localStorage'e kullanıcı bilgilerini kaydet
         localStorage.setItem("isLoggedIn", true);
         localStorage.setItem("uid", user.uid);
         navigate("/");
