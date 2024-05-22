@@ -1,0 +1,52 @@
+@import "../../utils/variables.scss";
+.accordion {
+    .accordion-head {
+        color: $dark-green;
+        font-family: Montserrat;
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 64px;
+        letter-spacing: 0em;
+        text-align: left;
+        background: none;
+        border: none;
+        transition: 0.1s all ease-in-out;
+        display: flex;
+        justify-content: space-between;
+        &:hover {
+            cursor: pointer;
+            color: $dark-pink;
+        }
+        & button {
+            color: $dark-green;
+            font-family: Montserrat;
+            font-size: 32px;
+            font-weight: 400;
+            line-height: 64px;
+            letter-spacing: 0em;
+            text-align: left;
+            background: none;
+            border: none;
+            transition: 0.1s all ease-in-out;
+            &:hover {
+                cursor: pointer;
+                color: $dark-pink;
+            }
+        }
+    }
+    .accordion-body {
+        transition: 0.5s;
+    }
+
+    .acc-open {
+        height: auto;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .acc-close {
+        height: 0;
+        visibility: hidden;
+        opacity: 0;
+    }
+}

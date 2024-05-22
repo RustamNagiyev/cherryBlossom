@@ -1,0 +1,47 @@
+.accordion .accordion-head {
+  color: #665F5F;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 64px;
+  letter-spacing: 0em;
+  text-align: left;
+  background: none;
+  border: none;
+  transition: 0.1s all ease-in-out;
+  display: flex;
+  justify-content: space-between;
+}
+.accordion .accordion-head:hover {
+  cursor: pointer;
+  color: #FFD1D7;
+}
+.accordion .accordion-head button {
+  color: #665F5F;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 64px;
+  letter-spacing: 0em;
+  text-align: left;
+  background: none;
+  border: none;
+  transition: 0.1s all ease-in-out;
+}
+.accordion .accordion-head button:hover {
+  cursor: pointer;
+  color: #FFD1D7;
+}
+.accordion .accordion-body {
+  transition: 0.5s;
+}
+.accordion .acc-open {
+  height: auto;
+  visibility: visible;
+  opacity: 1;
+}
+.accordion .acc-close {
+  height: 0;
+  visibility: hidden;
+  opacity: 0;
+}/*# sourceMappingURL=style.module.css.map */

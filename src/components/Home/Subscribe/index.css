@@ -1,0 +1,79 @@
+.subscribe .questions-header {
+  background-color: #FFD1D7;
+  margin-top: 5rem;
+}
+.subscribe .questions-header h3 {
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0em;
+  color: #665F5F;
+  padding-top: 1rem;
+}
+.subscribe .questions-header p {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #665F5F;
+}
+.subscribe .questions-header .send-email {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5rem;
+  padding-bottom: 1rem;
+  position: relative;
+}
+.subscribe .questions-header .send-email input {
+  width: 25%;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  transition: 0.5s all ease-in-out;
+  font-size: 18px;
+}
+.subscribe .questions-header .send-email input:hover {
+  margin-right: 30px;
+}
+.subscribe .questions-header .send-email .send-img {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 10px;
+  right: 38%;
+}
+.subscribe .questions-header .send-email .send-img:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  .subscribe .questions-header h3 {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24.84px;
+    text-align: center;
+  }
+  .subscribe .questions-header p {
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.9px;
+    text-align: center;
+  }
+  .subscribe .questions-header .send-email input {
+    width: 90%;
+  }
+  .subscribe .questions-header .send-email input:hover {
+    margin-right: 0;
+    transform: scale(1.05);
+  }
+  .subscribe .questions-header .send-email .send-img {
+    right: 5%;
+  }
+}/*# sourceMappingURL=index.css.map */

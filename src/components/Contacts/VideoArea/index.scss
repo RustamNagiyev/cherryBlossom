@@ -1,0 +1,88 @@
+@import "../../../utils/variables.scss";
+.watch {
+    //video component
+    .video-area {
+        margin-top: 3rem;
+        .video-box {
+            width: 50%;
+            display: block;
+            margin: 0 auto;
+            background-color: $dark-pink;
+            padding: 9rem 0;
+            text-align: center;
+            border-radius: 5px;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+            transition: 0.3s all ease-in-out;
+            &:hover {
+                cursor: pointer;
+                transform: scale(1.05);
+            }
+        }
+    }
+    .iframe-video-wrapper {
+        position: fixed;
+        z-index: 9999;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.909);
+        transform: scale(0);
+        transition: transform 0.3s 0.2s;
+        visibility: hidden;
+        iframe {
+            width: 65%;
+            height: 65%;
+            display: block;
+            margin: 0 auto;
+            transform: translateY(25%);
+        }
+        span {
+            color: #fff;
+            position: absolute;
+            right: 2rem;
+            top: 2rem;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.5rem;
+            font-weight: lighter;
+            cursor: pointer;
+            transition: color 0.3s;
+            &:hover {
+                color: #ff0000;
+            }
+        }
+    }
+}
+@media (max-width: 900px) {
+    .watch {
+        .video-area {
+            .video-box {
+                padding: 4rem 0;
+            }
+        }
+        .iframe-video-wrapper {
+            iframe {
+                width: 90%;
+                height: 55%;
+            }
+        }
+    }
+}
+@media (max-width: 500px) {
+    .watch {
+        .video-area {
+            .video-box {
+                padding: 3rem 0;
+                img {
+                    width: 55px;
+                }
+            }
+        }
+        .iframe-video-wrapper {
+            iframe {
+                width: 90%;
+                height: 45%;
+            }
+        }
+    }
+}

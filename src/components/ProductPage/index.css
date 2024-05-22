@@ -1,0 +1,164 @@
+.product-page {
+  padding-top: 10rem;
+}
+.product-page .product-main {
+  margin: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.product-page .product-main .left {
+  padding: 1rem;
+  width: 45%;
+  text-align: center;
+}
+.product-page .product-main .left img {
+  border-radius: 10px;
+}
+.product-page .product-main .right {
+  padding: 1rem;
+  width: 55%;
+}
+.product-page .product-main .right .product-name {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29.8px;
+  color: #665F5F;
+}
+.product-page .product-main .right .product-cost {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29.8px;
+  color: #665F5F;
+  margin-top: 1rem;
+}
+.product-page .product-main .right .shipping-text {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.87px;
+  color: #665F5F;
+}
+.product-page .product-main .right .shipping-text span {
+  border-bottom: 1px solid #665F5F;
+  transition: 0.2s all ease-in-out;
+}
+.product-page .product-main .right .shipping-text span:hover {
+  color: #FFD1D7;
+  border-bottom: 1px solid #FFD1D7;
+  cursor: pointer;
+}
+.product-page .product-main .right .btn-area {
+  display: flex;
+  margin-top: 2rem;
+}
+.product-page .product-main .right .btn-area .left-btn-area p {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.87px;
+  color: #665F5F;
+}
+.product-page .product-main .right .btn-area .left-btn-area .minus-plus-area {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #665F5F;
+  border-radius: 5px;
+  margin-top: 0.5rem;
+  width: 7rem;
+  height: 2rem;
+  padding: 0 0.5rem;
+}
+.product-page .product-main .right .btn-area .left-btn-area .minus-plus-area .minus-plus-btn {
+  background: none;
+  border: none;
+  align-items: center;
+  color: #665F5F;
+  display: flex;
+}
+.product-page .product-main .right .btn-area .left-btn-area .minus-plus-area .minus-plus-btn:hover {
+  cursor: pointer;
+}
+.product-page .product-main .right .btn-area .left-btn-area .minus-plus-area .number {
+  display: flex;
+  align-items: center;
+  color: #665F5F;
+}
+.product-page .product-main .right .btn-area .right-btn-area button {
+  height: 100%;
+  padding: 1rem 1rem;
+  margin-left: 2rem;
+  border-radius: 5px;
+  background-color: #665F5F;
+  color: #FFFFFF;
+  border: none;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29.8px;
+  text-align: center;
+  transition: 0.2s all ease-in-out;
+}
+.product-page .product-main .right .btn-area .right-btn-area button:hover {
+  background-color: #FFD1D7;
+  color: #665F5F;
+  cursor: pointer;
+}
+.product-page .product-main .right .end-text {
+  margin-top: 2rem;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.87px;
+  color: #665F5F;
+  width: 60%;
+}
+.product-page .product-main .right .end-text span {
+  font-weight: 700;
+}
+
+@media (min-width: 701px) and (max-width: 1001px) {
+  .product-page .product-main {
+    margin: 2rem 0;
+  }
+  .product-page .product-main .left {
+    width: 60%;
+  }
+  .product-page .product-main .right {
+    width: 40%;
+  }
+  .product-page .product-main .right .btn-area {
+    flex-direction: column;
+  }
+  .product-page .product-main .right .btn-area .right-btn-area button {
+    margin: 1rem 0;
+  }
+  .product-page .product-main .right .end-text {
+    width: 100%;
+    margin: 0;
+  }
+}
+@media (max-width: 700px) {
+  .product-page .product-main {
+    margin: 2rem 0;
+    flex-direction: column;
+  }
+  .product-page .product-main .left {
+    width: 100%;
+    padding: 0;
+  }
+  .product-page .product-main .right {
+    width: 100%;
+  }
+  .product-page .product-main .right .btn-area {
+    flex-direction: column;
+  }
+  .product-page .product-main .right .btn-area .right-btn-area button {
+    margin: 1rem 0;
+  }
+  .product-page .product-main .right .end-text {
+    width: 100%;
+    margin: 0;
+  }
+}/*# sourceMappingURL=index.css.map */

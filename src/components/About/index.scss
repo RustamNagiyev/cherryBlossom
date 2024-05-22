@@ -1,0 +1,48 @@
+@import "../../utils/variables.scss";
+.about {
+    padding-top: 9rem;
+    .main-section {
+        .header-img {
+            width: 100%;
+            margin-top: 3rem;
+        }
+        .text-area {
+            display: block;
+            margin: 0 auto;
+            width: 60%;
+            p {
+                font-family: Montserrat;
+                font-size: 24px;
+                font-weight: 400;
+                line-height: 48px;
+                margin-top: 3rem;
+                color: $dark-green;
+            }
+        }
+    }
+}
+@media (max-width: 900px) {
+    .about {
+        .main-section {
+            .text-area {
+                width: 80%;
+                p {
+                    line-height: 35px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 500px) {
+    .about {
+        .main-section {
+            .text-area {
+                width: 80%;
+                p {
+                    line-height: 20px;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}

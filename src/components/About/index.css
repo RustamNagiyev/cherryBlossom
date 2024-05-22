@@ -1,0 +1,38 @@
+.about {
+  padding-top: 9rem;
+}
+.about .main-section .header-img {
+  width: 100%;
+  margin-top: 3rem;
+}
+.about .main-section .text-area {
+  display: block;
+  margin: 0 auto;
+  width: 60%;
+}
+.about .main-section .text-area p {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 48px;
+  margin-top: 3rem;
+  color: #665F5F;
+}
+
+@media (max-width: 900px) {
+  .about .main-section .text-area {
+    width: 80%;
+  }
+  .about .main-section .text-area p {
+    line-height: 35px;
+  }
+}
+@media (max-width: 500px) {
+  .about .main-section .text-area {
+    width: 80%;
+  }
+  .about .main-section .text-area p {
+    line-height: 20px;
+    font-size: 12px;
+  }
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,177 @@
+@import "../../utils/variables.scss";
+
+.product-page {
+    padding-top: 10rem;
+    .product-main {
+        margin: 2rem;
+        display: flex;
+        justify-content: center;
+        .left {
+            padding: 1rem;
+            width: 45%;
+            text-align: center;
+            img{
+                border-radius: 10px;
+            }
+        }
+        .right {
+            padding: 1rem;
+            width: 55%;
+            .product-name {
+                font-family: Montserrat;
+                font-size: 24px;
+                font-weight: 400;
+                line-height: 29.8px;
+                color: $dark-green;
+            }
+            .product-cost {
+                font-family: Montserrat;
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 29.8px;
+                color: $dark-green;
+                margin-top: 1rem;
+            }
+            .shipping-text {
+                font-family: Montserrat;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 19.87px;
+                color: $dark-green;
+                span {
+                    border-bottom: 1px solid $dark-green;
+                    transition: 0.2s all ease-in-out;
+                    &:hover {
+                        color: $dark-pink;
+                        border-bottom: 1px solid $dark-pink;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .btn-area {
+                display: flex;
+                margin-top: 2rem;
+                .left-btn-area {
+                    p {
+                        font-family: Montserrat;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 19.87px;
+                        color: $dark-green;
+                    }
+                    .minus-plus-area {
+                        display: flex;
+                        justify-content: space-between;
+                        border: 1px solid $dark-green;
+                        border-radius: 5px;
+                        margin-top: 0.5rem;
+                        width: 7rem;
+                        height: 2rem;
+                        padding: 0 0.5rem;
+                        .minus-plus-btn {
+                            background: none;
+                            border: none;
+                            align-items: center;
+                            color: $dark-green;
+                            display: flex;
+                            &:hover {
+                                cursor: pointer;
+                            }
+                        }
+                        .number {
+                            display: flex;
+                            align-items: center;
+                            color: $dark-green;
+                        }
+                    }
+                }
+                .right-btn-area {
+                    button {
+                        height: 100%;
+                        padding: 1rem 1rem;
+                        margin-left: 2rem;
+                        border-radius: 5px;
+                        background-color: $dark-green;
+                        color: $white;
+                        border: none;
+                        font-family: Montserrat;
+                        font-size: 24px;
+                        font-weight: 700;
+                        line-height: 29.8px;
+                        text-align: center;
+                        transition: 0.2s all ease-in-out;
+                        &:hover {
+                            background-color: $dark-pink;
+                            color: $dark-green;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+            .end-text {
+                margin-top: 2rem;
+                font-family: Montserrat;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 19.87px;
+                color: $dark-green;
+                width: 60%;
+                span {
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 701px) and (max-width: 1001px) {
+.product-page{
+    .product-main{
+        margin: 2rem 0;
+        .left{
+            width: 60%;
+        }
+        .right{
+            width: 40%;
+            .btn-area{
+                flex-direction: column;
+                .right-btn-area{
+                    button{
+                        margin: 1rem 0;
+                    }
+                }
+            }
+            .end-text{
+                width: 100%;
+                margin: 0;
+            }
+        }
+    }
+}
+}
+@media (max-width: 700px) {
+    .product-page{
+        .product-main{
+            margin: 2rem 0;
+            flex-direction: column;
+            .left{
+                width: 100%;
+                padding: 0;
+            }
+            .right{
+                width: 100%;
+                .btn-area{
+                    flex-direction: column;
+                    .right-btn-area{
+                        button{
+                            margin: 1rem 0;
+                        }
+                    }
+                }
+                .end-text{
+                    width: 100%;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,44 @@
+.questions .header-text {
+  color: #665F5F;
+  margin-top: 4rem;
+  font-family: Montserrat;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.questions .questions-center {
+  width: 60%;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+
+@media (max-width: 1025px) {
+  .questions .questions-center {
+    width: 90%;
+  }
+  .questions .questions-center .ques p {
+    line-height: 45px;
+  }
+}
+@media (max-width: 500px) {
+  .questions .header-text {
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29.8px;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .questions .questions-center {
+    width: 90%;
+  }
+  .questions .questions-center .ques p {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+  }
+}/*# sourceMappingURL=index.css.map */

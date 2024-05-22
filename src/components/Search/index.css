@@ -1,0 +1,74 @@
+.search {
+  padding-top: 9rem;
+}
+.search .search-area {
+  background-color: #FFD1D7;
+  text-align: center;
+  padding-bottom: 7rem;
+  margin-top: 3rem;
+  padding-top: 2rem;
+}
+.search .search-area div {
+  position: relative;
+  width: 50%;
+  margin: 0 auto;
+}
+.search .search-area div input {
+  border: none;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  padding: 1rem;
+  margin-top: 1rem;
+  font-size: 16px;
+  color: #665F5F;
+}
+.search .search-area div p {
+  font-size: 30px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: #665F5F;
+  transition: 0.3s all ease-in-out;
+}
+.search .search-area div p:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+.search .search-area ul {
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 0 0 10px 10px;
+  background-color: #FFFFFF;
+}
+.search .search-area ul .recommended-product {
+  display: flex;
+  transition: 0.3s all ease-in-out;
+}
+.search .search-area ul .recommended-product:hover {
+  background-color: #665F5F;
+  transform: scale(1.005);
+  border-radius: 10px;
+}
+.search .search-area ul .recommended-product:hover .rec-text {
+  color: #FFD1D7;
+}
+.search .search-area ul .recommended-product .rec-img {
+  width: 80px;
+  border-radius: 10px;
+  padding: 0.5rem;
+}
+.search .search-area ul .recommended-product .rec-text {
+  display: flex;
+  align-items: center;
+  color: #665F5F;
+}
+
+@media (max-width: 500px) {
+  .search .search-area div {
+    width: 80%;
+  }
+  .search .search-area ul {
+    width: 80%;
+  }
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,55 @@
+.auth {
+  padding-top: 12rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.auth .main {
+  width: 60%;
+  background-color: #FFD1D7;
+  padding: 2rem;
+  border-radius: 5px;
+  border: none;
+}
+.auth .main .auth-container .container-sign {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+.auth .main .auth-container .container-sign input {
+  width: 45%;
+  height: 3rem;
+  border: none;
+  padding: 0 1rem;
+  border-radius: 5px;
+}
+.auth .main .auth-container h2 {
+  color: #665F5F;
+  font-size: 34px;
+}
+.auth .main .auth-container .auth-container-button {
+  display: block;
+  margin: 0 auto;
+  width: 40%;
+  color: #665F5F;
+  transition: 0.3s all ease-in-out;
+}
+.auth .main .auth-container .auth-container-button:hover {
+  cursor: pointer;
+  color: #FFFFFF;
+  transform: scale(1.2);
+}
+
+@media (max-width: 700px) {
+  .auth .main {
+    width: 100%;
+  }
+  .auth .main .auth-container .container-sign {
+    flex-direction: column;
+  }
+  .auth .main .auth-container .container-sign input {
+    width: 100%;
+    margin: 1rem auto;
+  }
+}/*# sourceMappingURL=login-reg.css.map */

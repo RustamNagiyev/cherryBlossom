@@ -1,0 +1,63 @@
+.follow .follow-header {
+  color: #665F5F;
+  margin-top: 6rem;
+  font-family: Montserrat;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.follow .follow-address {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #665F5F;
+  border-bottom: 1px solid #665F5F;
+  width: 18rem;
+  margin: 0 auto;
+  transition: 0.2s all ease-in-out;
+}
+.follow .follow-address:hover {
+  color: #FFD1D7;
+  border-bottom: 1px solid #FFD1D7;
+}
+.follow .follow-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.follow .follow-container .follow-flex {
+  width: 27%;
+}
+.follow .follow-container .follow-flex .img-flowers {
+  width: 100%;
+  padding: 0.3rem;
+  transition: 0.3s all ease-in-out;
+}
+.follow .follow-container .follow-flex .img-flowers:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  .follow div .follow-header {
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29.8px;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .follow div .follow-address {
+    font-size: 15px;
+    width: 12rem;
+  }
+  .follow .follow-container .follow-flex {
+    width: 32%;
+  }
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,63 @@
+@import "../../../utils/variables.scss";
+
+.auth {
+    padding-top: 12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    .main {
+        width: 60%;
+        background-color: $dark-pink;
+        padding: 2rem;
+        border-radius: 5px;
+        border: none;
+        .auth-container {
+            .container-sign {
+                display: flex;
+                justify-content: space-between;
+                padding: 2rem;
+                input {
+                    width: 45%;
+                    height: 3rem;
+                    border: none;
+                    padding: 0 1rem;
+                    border-radius: 5px;
+                }
+            }
+            h2 {
+                color: $dark-green;
+                font-size: 34px;
+            }
+            .auth-container-button {
+                display: block;
+                margin: 0 auto;
+                width: 40%;
+                color: $dark-green;
+                transition: 0.3s all ease-in-out;
+                &:hover{
+                    cursor: pointer;
+                    color: $white;
+                    transform: scale(1.2);
+                }
+            }
+        }
+       
+    }
+}
+@media (max-width: 700px) {
+.auth{
+    .main{
+        width: 100%;
+        .auth-container{
+            .container-sign{
+                flex-direction: column;
+                input{
+                    width: 100%;
+                    margin: 1rem auto;
+                }
+            }
+        }
+    }
+}
+}

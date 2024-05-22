@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  font-family: Montserrat;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: #665F5F;
+}
+
+.container {
+  display: block;
+  width: 78%;
+  margin: 0 auto;
+}
+
+.page-info-nav {
+  display: flex;
+}
+
+.header-com {
+  font-family: Montserrat;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 70px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #665F5F;
+  margin: 3rem 0;
+}
+
+.swiper-button-next::after {
+  content: "next";
+  font-size: 30px !important;
+  padding: 8px 15px;
+  border-radius: 5px;
+  color: #665F5F;
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: 0.3s all ease-in-out;
+}
+.swiper-button-next::after:hover {
+  transform: scale(1.1);
+}
+
+.swiper-button-prev::after {
+  content: "prev";
+  font-size: 30px !important;
+  padding: 8px 15px;
+  border-radius: 5px;
+  color: #665F5F;
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: 0.3s all ease-in-out;
+}
+.swiper-button-prev::after:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 500px) {
+  .header-com {
+    font-family: Montserrat;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39.74px;
+    text-align: center;
+  }
+}/*# sourceMappingURL=App.css.map */
